@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+ 	<name>COM_EASYPAYZARINPAL</name>
+	<creationDate>May 2017</creationDate>
+	<author>Amir Sedighirad</author>
+	<authorEmail>rozebeh2008@yahoo.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Copyright 2017 amir sedighi rad. All rights reserved!</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>COM_EASYPAYZARINPAL_DESCRIPTION</description>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql" charset="utf8">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	<media destination="com_easypayzarinpal" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>upload</folder>
+	</media>
+	
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>easypayzarinpal.php</filename>
+		<filename>controller.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>views</folder>
+		<folder>models</folder>
+	</files>
+	
+    <languages>
+		<language tag="fa-IR">language/fa-IR/fa-IR.com_easypayzarinpal.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_easypayzarinpal.ini</language>
+    </languages>
+
+	<administration>
+		<menu img="../media/com_easypayzarinpal/images/com_easypayzarinpal.png">COM_EASYPAYZARINPAL_MENU</menu>
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>easypayzarinpal.php</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+		</files>
+ 
+		<languages folder="admin">
+            <language tag="fa-IR">language/fa-IR/fa-IR.com_easypayzarinpal.sys.ini</language>
+            <language tag="fa-IR">language/fa-IR/fa-IR.com_easypayzarinpal.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_easypayzarinpal.sys.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_easypayzarinpal.ini</language>
+		</languages>
+	</administration>
+	
+</extension>
