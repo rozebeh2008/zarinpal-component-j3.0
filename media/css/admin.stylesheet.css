@@ -1,0 +1,9 @@
+﻿@CHARSET "UTF-8";
+.icon-16-msglist	{	background-image: url(../media/com_easypayzarinpal/images/icon-16-msglist.png);	}
+.icon-48-msglist	{	background-image: url(../../../media/com_easypayzarinpal/images/icon-48-msglist.png);	}
+.icon-16-paylist	{	background-image: url(../media/com_easypayzarinpal/images/icon-16-paylist.png);	}
+.icon-48-paylist	{	background-image: url(../../../media/com_easypayzarinpal/images/icon-48-paylist.png);	}
+.icon_download{background-image: url("../../../media/com_easypayzarinpal/images/download.png");background-position: 0 0;background-repeat: no-repeat;display: block;float: right;height: 50px;text-indent: -999%;width: 50px;}
+#jform_attachment-lbl{position: relative;top: 15px;}
+#settle-enable{background-image: url("../images/settle_enable.png");background-position: 0 0;background-repeat: no-repeat;display: inline-block;height: 29px;text-indent: -999%;width: 100px;}
+#settle-disable{background-image: url("../images/settle_disable.png");background-position: 0 0;background-repeat: no-repeat;display: inline-block;height: 29px;text-indent: -999%;width: 100px;}

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="bank_config">
+		<field
+			name="web_service"
+			type="text"
+			size="50"
+			label="COM_EASYPAYZARINPAL_FIELD_WEB_SERVICE_LABEL"
+			default="https://www.zarinpal.com/pg/services/WebGate/wsdl"
+		/>
+		
+		<field 
+			name="spacer1" 
+			type="spacer" 
+			class="text"
+			label="COM_EASYPAYZARINPAL_FIELD_SPACER1_LABEL"
+		/>
+		<field
+			name="terminalid"
+			type="text"
+			size="50"
+			label="COM_EASYPAYZARINPAL_FIELD_TERMINALID_LABEL"
+		/>
+		
+	</fieldset>
+	<fieldset name="email_config">
+		<field 
+			name="send_email"
+			type="radio" 
+			default="1" 
+			label="COM_EASYPAYZARINPAL_FIELD_SEND_EMAIL_LABEL" 
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="email"
+			type="text"
+			size="50"
+			default="admin@yoursite.ir"
+			label="COM_EASYPAYZARINPAL_FIELD_EMAIL_LABEL"
+		/>
+		<field
+			name="spacer2"
+			type="spacer"
+			hr="true"
+		/>
+		<field 
+			name="email_msg"
+			type="editor"
+			label="COM_EASYPAYZARINPAL_FIELD_EMAIL_MSG_LABEL"
+			class="inputbox"
+			filter="safehtml"
+			required="false"
+			width="60"
+			default="یک کاربر با ایمیل JN_EMAIL، مبلغ JN_COST تومان، به شماره فاکتور JN_ORDERID، با شماره تراکنش JN_REFID را با موفقیت پرداخت کرد."
+		/>
+		<field 
+			name="spacer4" 
+			type="spacer" 
+			class="text"
+			label="COM_EASYPAYZARINPAL_FIELD_SPACER4_LABEL"
+		/>	
+		<field
+			name="spacer3"
+			type="spacer"
+			hr="true"
+		/>
+		
+		<field
+			name="sign"
+			type="radio"
+			default="1"
+			label="COM_EASYPAYZARINPAL_FIELD_SIGN_LABEL">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="display_config">
+		<field 
+			name="phone"
+			type="radio" 
+			default="1" 
+			label="COM_EASYPAYZARINPAL_FIELD_PHONE_LABEL" 
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="mellicode"
+			type="radio" 
+			default="1" 
+			label="COM_EASYPAYZARINPAL_FIELD_MELLICODE_LABEL" 
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field 
+			name="state"
+			type="radio" 
+			default="1" 
+			label="COM_EASYPAYZARINPAL_FIELD_STATE_LABEL" 
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field 
+			name="city"
+			type="radio" 
+			default="1" 
+			label="COM_EASYPAYZARINPAL_FIELD_CITY_LABEL" 
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field 
+			name="address"
+			type="radio" 
+			default="1" 
+			label="COM_EASYPAYZARINPAL_FIELD_ADDRESS_LABEL" 
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field 
+			name="postcode"
+			type="radio" 
+			default="1" 
+			label="COM_EASYPAYZARINPAL_FIELD_POSTCODE_LABEL" 
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="attachment"
+			type="radio" 
+			default="1" 
+			label="COM_EASYPAYZARINPAL_FIELD_ATTACHMENT_LABEL" 
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field 
+			name="description"
+			type="radio" 
+			default="1" 
+			label="COM_EASYPAYZARINPAL_FIELD_DESCRIPTION_LABEL" 
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	</fieldset>
+</config>

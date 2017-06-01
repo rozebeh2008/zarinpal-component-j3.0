@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="pay_table">
+		<field name="id"
+			type="hidden"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+		<field name="firstname"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_FIRSTNAME_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field name="lastname"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_LASTNAME_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field name="email" 
+			type="email"
+			class="inputbox"
+			label="JGLOBAL_EMAIL"
+			required="true"
+			size="50"
+			validate="email"
+		/>
+		<field name="phone"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_PHONE_LABEL"
+			class="inputbox"
+			size="50"
+			required="false"
+		/>
+		<field name="mobile"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_MOBILE_LABEL"
+			class="inputbox"
+			size="50"
+			required="false"
+		/>
+		<field name="mellicode"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_MELLICODE_LABEL"
+			class="inputbox"
+			size="50"
+			required="false"
+		/>
+		<field name="state"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_STATE_LABEL"
+			class="inputbox"
+			size="50"
+			required="false"
+		/>
+		<field name="city"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_CITY_LABEL"
+			class="inputbox"
+			size="50"
+			required="false"
+		/>
+		<field name="address"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_ADDRESS_LABEL"
+			class="inputbox"
+			size="50"
+			required="false"
+		/>
+		<field name="postcode"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_POSTCODE_LABEL"
+			class="inputbox"
+			size="50"
+			required="false"
+		/>
+		<field name="cost"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_COST_LABEL"
+			size="50"
+			class="readonly"
+			readonly="true"
+		/>
+		<field name="orderid"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_ORDERID_LABEL"
+			size="50"
+			class="readonly"
+			readonly="true"
+		/>
+		<field name="salerefid"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_SALEREFID_LABEL"
+			size="50"
+			class="readonly"
+			readonly="true"
+		/>		
+		<field name="paydate"
+			type="calendar"
+			label="COM_EASYPAYZARINPAL_FIELD_PAYDATE_LABEL"		
+			class="inputbox"
+			format="%Y-%m-%d %H:%M:%S"
+			size="22"
+			filter="user_utc" 
+		/>				
+		<field name="published"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			filter="intval"
+			size="1"
+			default="0"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+	<fieldset name="pay_other_field">
+		<field name="msgid"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_MSGID_LABEL"
+			size="68"
+			class="readonly"
+			readonly="true"
+		/>	
+		<field name="attachment"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_ATTACHMENT_LABEL"
+			class="inputbox"
+			size="50"
+			required="false"
+		/>
+		<field name="description"
+			type="editor"
+			label="COM_EASYPAYZARINPAL_FIELD_DESCRIPTION_LABEL"
+			class="inputbox"
+			filter="safehtml"
+			required="false"
+		/>
+		<field name="sattel"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_SATTEL_LABEL"
+			class="inputbox"
+			size="50"
+			required="false"
+		/>	
+	</fieldset>
+</form>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="msg_table">
+		<field 
+			name="id"
+			type="hidden"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+		<field
+			name="code"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_CODE_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field
+			name="msg"
+			type="text"
+			label="COM_EASYPAYZARINPAL_FIELD_MSG_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+	</fieldset>
+</form>
